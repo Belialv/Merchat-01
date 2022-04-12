@@ -53,3 +53,4 @@ public class App {
         System.out.println(output);
     }
 }
+// Где тут нужен Scanner
