@@ -1,5 +1,7 @@
 package app;
 
+import java.util.Scanner;
+
 // Класс-входная точка в приложение.
 // App launcher.
 public class App {
@@ -25,12 +27,19 @@ public class App {
     // Инициализация переменных.
     // Имитация ввода данных пользователем.
     private static void initVars() {
-        merchantName = "Роберт";
-        email = "bob@mail.com";
-        phone = "055 123-4567";
-        productName = "апельсины";
-        quantity = 1000;
-        price = 19.99;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Введите имя продавца:");
+        merchantName = s.nextLine();
+        System.out.println("Введите почту продавца:");
+        email = s.nextLine();
+        System.out.println("Введите телефонный номер продавца:");
+        phone = s.nextLine();
+        System.out.println("Введите название товара:");
+        productName = s.nextLine();
+        System.out.println("Введите количество проданного товара:");
+        quantity = s.nextInt();
+        System.out.println("Введите цену на товар:");
+        price = s.nextDouble();
     }
 
     // Передача данных на обработку.
